@@ -1,0 +1,65 @@
+ss{article}
+\usepackage{verbatim}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage[english]{babel}
+\usepackage{listings}
+\lstset{language=C,basicstyle=\ttfamily,breaklines=true}
+\usepackage[autostyle=true, english = american]{csquotes}
+\MakeOuterQuote{+}
+
+\newcommand{\n}{\par\vspace{\baselineskip}}
+
+\title{Homework 5}
+\author{Shawn Fotsch}
+\date{\today}
+
+\begin{document}
+   \maketitle
+
+   \section{Exercise 2}
+      \begin{itemize}
+      \item Print the names of players that throw with the left arm. \n
+
+      \item Print the whole record for players that throw and bat with different arms. \n
+
+      \item Print the table without header lines (i.e., only playerâ<80><99>s records). \n
+
+      \item Print the names of players that were born between 1930 and 1940 (inclusive). \n
+
+      \item Print the whole table using \verb:;: as field separator, and \verb;\n\n; as record separator. \n
+
+      \item Print the name of the teamâ<80><99>s catchers, without any headers. \n
+
+      \end{itemize}
+
+                \verb;numbers.txt; contains two numbers that are comma separated $a, b$.
+   \section{Exercise 3}
+      \begin{itemize}
+      \item Write an \verb;awk; command line to output the largest of the two for each line of the file.\n
+
+      \item Write an \verb;awk; command line to compute the average per column. (Do not hard-code the number of rows.)\n
+
+      \end{itemize}
+
+   \section {Exercise 4}
+      Write an \verb;awk; script named \verb;psroot.awk; to parse the output of the \verb;ps au; command and give the total \%CPU of the user \verb;root;. \n
+
+                        %\lstinputlisting{psroot.awk}
+
+   \section {Exercise 5}
+                Recall that the roots of the equation $ax^{2} +bx+c = 0$ can be solved with the quadratic formula.
+                \centering$\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}$.
+
+                \begin{itemize}
+                        \item Write an \verb;awk; function to solve the quadratic formula. The function should receive four arguments: three coefficients, and the sign of the square root to compute.\n
+
+                        %\lstinputlisting{quadfunc.awk}
+                        \item  \verb;coefs.txt; is a file where each line corresponds to a quadratic equation and the coefficients are listed as a:b:c. Write an \verb;awk; script named \verb;quad.awk; to output the roots of each line (in order) in the form $a : b : c : x_{1} : x_{2}$.  (The function to compute square roots is \verb;sqrt;.)\n
+
+                        %\lstinputlisting{quad.awk}
+
+                \end{itemize}
+
+\end{document}
+
